@@ -325,35 +325,6 @@
                 font-weight: 400;
             }
 
-            #credits br + br {
-                margin-top: 0.9rem;
-            }
-
-            #credits {
-                color: #363636;
-                font-family: 'Roboto', sans-serif;
-                letter-spacing: -0.05rem;
-                width: 100%;
-                font-size: 0.6em;
-                line-height: 1.5;
-                font-weight: 400;
-                cursor: default;
-                margin-top: 1rem !important;
-            }
-
-            #credits a {
-                text-decoration: none !important;
-                -moz-transition: opacity 0.25s ease;
-                -webkit-transition: opacity 0.25s ease;
-                -ms-transition: opacity 0.25s ease;
-                transition: opacity 0.25s ease;
-                opacity: 0.5;
-            }
-
-            #credits a:hover {
-                text-decoration: none !important;
-                opacity: 1;
-            }
 
             .icons {
                 cursor: default;
@@ -572,12 +543,6 @@
                     line-height: 1.75;
                 }
 
-                #credits {
-                    letter-spacing: -0.04375rem;
-                    width: 100%;
-                    font-size: 0.6em;
-                    line-height: 1.5;
-                }
 
                 #icons01 {
                     font-size: 1em;
@@ -658,10 +623,6 @@
                     font-size: 1em;
                 }
 
-                #credits {
-                    font-size: 0.6em;
-                }
-
                 #icons01 {
                     width: calc(100% + 0.5625rem);
                     margin-left: -0.28125rem;
@@ -739,7 +700,7 @@
                             </a>
                         </li>
                         <li>
-                            <a class="n02" href="mailto:%69%6e%66%6f%40%6d%69%73%68%6b%69%6e%61%2d%66%6f%72%65%6c%2e%72%75">
+                            <a class="n02" href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%69%6e%66%6f%40%6d%69%73%68%6b%69%6e%61%2d%66%6f%72%65%6c%2e%72%75">
                                 <svg>
                                     <use xlink:href="#icon-90a"></use>
                                 </svg>
@@ -876,8 +837,6 @@
                     }
                     return null;
                 }
-                  
-                  
                   , errors = {
                     handle: function(handler) {
                         window.onerror = function(message) {
@@ -889,8 +848,7 @@
                     unhandle: function() {
                         window.onerror = null;
                     }
-                }
-                  , 
+                };
                 on('load', function() {
                     setTimeout(function() {
                         $body.className = $body.className.replace(/\bis-loading\b/, 'is-playing');
